@@ -1,0 +1,31 @@
+#backOffice h1 {
+    // width: 100%;
+    text-align: center;
+    margin: 75px;
+    font-size: 6em;
+    text-shadow:
+	-1px -1px 0 white,  
+	1px -1px 0 white,
+	-1px 1px 0 white,
+	1px 1px 0 white;
+}
+
+
+.TO-container-backOffice{
+    padding: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.TO-container-backOffice:hover {
+    transform: none; // fait bugger la modal si pas none;
+    background-color: white;
+}
+
+button[type="submit"] {
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+

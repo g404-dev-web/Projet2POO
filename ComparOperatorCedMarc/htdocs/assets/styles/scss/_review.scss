@@ -1,0 +1,33 @@
+blockquote {
+  margin-left:46px;
+  font-family:"Segoe Print", "Times New Roman", Verdana;
+  padding: 8px;
+  min-height: 44px;  
+  border:2px solid black;
+  border-radius:6px;  
+  z-index:1;
+  background-color: white;
+}
+ 
+.bubble {
+  background: url('/assets/img/bubble2.png') no-repeat;
+  margin:16px 0 0 0;
+  width:48px;
+  height:20px;
+  padding:0;
+  position:relative;
+  z-index:10;
+  float:left;
+}
+
+.nameAuthor {
+    // width: 250px;
+    display: inline-block;
+
+}
+
+.container-bubble {
+    display: inline-block;
+    max-width: 60vw;
+}
+

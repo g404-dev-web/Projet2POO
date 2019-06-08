@@ -1,0 +1,157 @@
+* kanban
+** Sprint 1
+| backlog | Production / En cours | test | terminé                                                      |
+|---------+-----------------------+------+--------------------------------------------------------------|
+|         |                       |      | Estimer les temps de travail pour chaque tâches :15min: /Marc/ |
+|         |                       |      | [[Cr%C3%A9ation wireframe & user stories][Création wireframe & user stories]] _Marc et Cedric_             |
+|         |                       |      | Définir initialement l(/d)es tâches _Marc_                     |
+|         |                       |      | Mise en place dépot git _Marc_                                 |
+|         |                       |      | Mise en place d'une architecture & Choix technos             |
+|         |                       |      | Import/complétion/export BDD  :45 minutes: /Marc/              |
+|         |                       |      | Création templates de base /Marc/ :	30 minutes:         |
+|         |                       |      | [[Création Charte graphique][Création charte graphique]]  :1/2j: /Cédric/                     |
+|         |                       |      | Récup logo TO & Ajout chemin dans BDD /Marc/ :1h:              |
+|         |                       |      | Ajout description destination dans BDD /:20min: Cedric/        |
+|         |                       |      | Mail client pour Daily meeting :20minutes:                   |
+|         |                       |      | Daily meeting 1 (with client) :15minutes:                    |
+|         |                       |      | Création footer.php :2h: /Marc/                                |
+|         |                       |      | Intégration charte graphique /Cédric/                          |
+|         |                       |      | création header.php :2h: /Cedric/                              |
+|         |                       |      | [[Visualisation des destinations _page.php_][Visualisation des destinations index.php]] :1jour: /Marc/        |
+|         |                       |      | Daily meeting 2 (with client) :30minutes:                    |
+|         |                       |      | Création page des destinations Back :1 jour: /Marc/                |
+|         |                       |      | [[Une page par destination][Création page des destinations]] Front :1 jour: /Cedric/         |
+|         |                       |      | Création objets php (du 1er sprint) :1/2j: /Marc/              |
+** Sprint 2
+| backlog                                       | Production / En cours                                   | test | terminé                                                         |
+|-----------------------------------------------+---------------------------------------------------------+------+-----------------------------------------------------------------|
+| Daily meeting 4 (with client)         :30min: | Création objets php (du 2ème sprint) :1/2j: /Marc/        |      | Présentation client du 1er sprint / daily Meeting 3 :15minutes: |
+| [[Creation d'un back office][Creation d'un back office]]             :1j:    | [[R%C3%A9sum%C3%A9 du TO (note, avis, prix dest.)][Résumé du TO (note, avis, prix dest.)]] front /Cedric/ :1j: |      | [[Syst%C3%A8me Commentaires/avis pour les TO][Système Commentaires/avis pour les TO]] /Marc/ :1j:                 |
+|                                               |                                                         |      | [[R%C3%A9sum%C3%A9 du TO (note, avis, prix dest.)][Résumé du TO (note, avis, prix dest.)]] Back /Marc/ :1j:            |
+|                                               |                                                         |      |                                                                 |
+|                                               |                                                         |      |                                                                 |
+
+
+* Contexte
+** Création d'un site de comparaison de Tour Opérateur pour un client
+** POC
+Dans un souci de développement agile, vous devez produire dans un
+premier temps une preuve de concept (POC) : une version simplifiée qui
+montrera les fonctionnalités du site avec un design attrayant mais
+sans identification ou sécurité spécifique.
+** But
+À la fin de cette semaine de sprint, vous devrez avoir un prototype
+fonctionnel pour le présenter au client afin de récolter ses premières
+impressions dans le but de faire des modifications à sa convenance.
+
+* Fonctionnalités du site
+Deux grandes parties : front-office et back-office.
+** Utilisateur
+*** DONE Visualisation des destinations _page.php_
+- Sur la page d'accueil l'utilisateur peut visualiser toutes les
+destinations proposées par ComparOpérator.
+- Limiter le nombre de destinations à 10 pour démarrer.
+- Redirection vers TO en fonction de la destination choisie
+**** DONE Une page par destination
+Quand une destination est sélectionnée, l'utilisateur est redirigé
+vers une page qui liste les Tours Opérateur (TO) pour cette
+destination.
+*** DONE Résumé du TO (note, avis, prix dest.)
+- sa note d'avis global (grade)
+- le prix des destinations
+- messages d'avis d'autres utilisateurs.
+
+- Affichage d'un lien vers site web du TO si premium
+Si le TO est premium, un lien vers son site officiel est disponible
+(au click d'un bouton ou sur le nom du TO).
+*** TODO Système Commentaires/avis pour les TO
+Un utilisateur peut écrire une review dans un simple champ de saisie.
+Il doit écrire son nom pour chaque avis laissé (comme pour le
+mini-chat).
+**** Bonus
+- Intégrer un POC d'une bannière promotionnelle d'un TO affichant une
+  destination mise en avant avec un prix réduit et un call-to-action
+  renvoyant vers l'offre.
+
+- un utilisateur peut donner une note à un TO, ce qui augmente ou
+  diminue son score moyen.
+** Administrateur
+*** TODO Creation d'un back office
+- La page administrateur est accessible juste en ajoutant /admin dans l'URL
+**** DONE Ajout de TO.
+**** DONE Ajout destinations aux TO
+L'administrateur peut également ajouter des destinations aux TO parmi une liste fixe.
+**** DONE Un tour opérateur peut être passé en premium sur cette page.
+*** Bonus
+ -  Ajouter la possibilité de donner une note au TO de 1 à 5 ce qui
+    augmente la note moyenne du TO en fonction du nombre de vote. (il
+    faudra ajouter une colonne =votes= à la table tour\_operators qui
+    s'incrémente à chaque vote pour faire une moyenne).
+
+ -  Authentification par mot de passe enregistré en session
+    (un mot de passe unique pour tous les administrateurs d'un site).
+
+* Autre taches
+** Gestion de Projet
+*** DONE Création wireframe & user stories
+
+*** Daily meeting 1
+- presentation wireframe
+- presentation des sprints
+- presentation charte graphique
+** Front-end
+*** TODO Création Charte graphique
+(logotype, thème de couleurs, typographie et iconographie).
+* Consignes générales et technologies
+- Utiliser un framework CSS de votre choix pour optimiser votre
+  workflow d'intégration.
+
+- Vous devrez porter un soin particulier sur l'ergonomie et le
+  parcours utilisateur du projet, prévoyez des effets de navigation et
+  de sélection intuitifs.
+
+- Le parcours utilisateur devra être réfléchi et optimisé pour une
+  utilisation intuitive des interfaces (liens clairs et cliquables,
+  zones de navigation définies, zones d'action visibles et
+  accessibles, textes lisibles et absence d'impasse et liens morts),
+
+- L'interface front-office devra être responsive (ou mobile first),
+  devra être compatible avec tous les terminaux du marché
+  (desktop/laptop/tablet/phone),
+
+- L'interface back-office devra être au moins adaptative
+  (desktop/laptop/tablet).
+
+- L'interface utilisera des éléments graphiques prédéfinis (nav,
+  sidebar, card, bouton, etc.) réutilisables sous forme /design-system
+  /à travers l'ensemble des pages de l'interface,
+
+- Le but de ce projet est amené à évoluer (méthode agile) il doit
+  nécessairement pouvoir être modifiable, vous allez concevoir la
+  partie back-end en POO.
+
+- Votre projet PHP devra respecter les normes et conventions de
+  rigueur ([[https://www.php-fig.org/psr/][PHP Standards Recommendations - PHP-FIG]]).
+* Ressources
+- Utiliser le diagramme de Bdd et UML pour la POO suivant:
+  https://drive.google.com/file/d/1HQOa5p8ah-5zTChEfZf7RA9aM2cv4Ati/view?usp=sharing
+- Utiliser la BDD suivante : [[https://www.fgtechs.fr/z-pedro/Simplon/compoperator/compoperator.sql][cliquant sur ce lien]].
+
+* OSEF :noexport:
+- Hiérarchiser/organiser le projet (traitements, assets...)
+- Le projet dure 5 jours.
+- Se répartir les taches
+- Créer un backlog sur [[https://asana.com][Asana]] ou [[https://trello.com/][Trello]] que vous rendrez collaboratif,
+** DONE
+*** bonus Gestion de projet
+ -  Découper le projet en 2 sprints égaux, ils devront être de difficulté
+    égale.
+ -  Le sprint 1 sera présenté lors d'une rétrospective avec le client, un
+    premier livrable devra pouvoir être testable.
+
+Des Dailies meeting seront organisés entre l'équipe de développement
+et le client chaque matin :
+
+ -  On décrit ce que l'on a fait hier,
+ -  On décrit ce que l'on va faire aujourd'hui,
+ -  On explique nos problématiques et nos potentiels blocages.

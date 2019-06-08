@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:400,600&display=swap");
+.bg-azure {
+  background-color: azure;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: whitesmoke;
+  background: orange;
+}
+
+::selection {
+  color: whitesmoke;
+  background: orange;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: whitesmoke;
+}
+body h5 {
+  font-weight: bold;
+}
+
+input[type=radio] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  -ms-appearance: checkbox;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(25, 25, 25, 0.1);
+  -webkit-box-shadow: 0 0 15px 4px rgba(207, 207, 207, 0.35);
+  -moz-box-shadow: 0 0 15px 4px rgba(207, 207, 207, 0.35);
+  box-shadow: 0 0 15px 4px rgba(207, 207, 207, 0.35);
+  user-select: none;
+}
+.navbar-title {
+  font-size: 2em;
+  font-family: "Karla", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.navbar-title span.compar {
+  color: lightblue;
+}
+.navbar-title span.operator {
+  color: orange;
+  font-weight: bold;
+}
+
+.btn-outline-orange {
+  background-color: whitesmoke;
+  border: 1px solid orange;
+  color: #222;
+  max-width: 362px;
+  transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
+  -moz-transition: all 100ms linear;
+  -ms-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
+}
+.btn-outline-orange:hover {
+  background-color: orange;
+  color: whitesmoke;
+  transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
+  -moz-transition: all 100ms linear;
+  -ms-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
+}
+
+.img-operator {
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+nav a,
+.destination {
+  text-decoration: none !important;
+}
+
+.destinations {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.destinations:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.card {
+  user-select: none;
+}
+.card-description .name {
+  font-size: 2.3em;
+  font-family: "Karla", sans-serif;
+  text-transform: capitalize;
+}
+.card-description .name .stars {
+  color: orange;
+}
+.card-description .location {
+  font-size: 1.6em;
+  text-transform: capitalize;
+}
+.card-description .price {
+  color: #cc8400;
+  font-weight: bolder;
+  font-size: 2em;
+  font-family: "Karla", sans-serif;
+}
+.card-description .review {
+  color: #222;
+  font-size: 1em;
+}
+.card-description .review i {
+  font-weight: bold;
+}
+.card-description .review .message {
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+.card-description .review .message.even {
+  background-color: #e0f0f5;
+}
+.card-description .review .message.odd {
+  background-color: whitesmoke;
+}
+.card-description .review .grade {
+  color: orange;
+  font-weight: bolder;
+  user-select: none;
+}
+
+.page-to {
+  background-image: url("");
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  background-color: #111;
+  padding-top: 20px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+#affichageCommentaire {
+  padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  td {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

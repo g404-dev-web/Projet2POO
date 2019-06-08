@@ -1,0 +1,11 @@
+$lightblue: lightblue;
+$orange: orange;
+$white: whitesmoke;
+$text-black: #222;
+$transparent-gray: rgba(25, 25, 25, 0.1);
+
+.bg {
+    &-azure {
+        background-color: azure;
+    }
+}

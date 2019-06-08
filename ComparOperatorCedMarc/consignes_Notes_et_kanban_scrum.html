@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-08 sam. 14:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Marc" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org58f8413">1. kanban</a>
+<ul>
+<li><a href="#org2d94c90">1.1. Sprint 1</a></li>
+<li><a href="#org6b18635">1.2. Sprint 2</a></li>
+</ul>
+</li>
+<li><a href="#org20a89ea">2. Contexte</a>
+<ul>
+<li><a href="#org50e826d">2.1. Création d'un site de comparaison de Tour Opérateur pour un client</a></li>
+<li><a href="#org8938913">2.2. POC</a></li>
+<li><a href="#org2cbb5c3">2.3. But</a></li>
+</ul>
+</li>
+<li><a href="#org1c9e53a">3. Fonctionnalités du site</a>
+<ul>
+<li><a href="#orgcec502d">3.1. Utilisateur</a>
+<ul>
+<li><a href="#orgea47eca">3.1.1. <span class="done DONE">DONE</span> Visualisation des destinations <span class="underline">page.php</span></a></li>
+<li><a href="#org932493c">3.1.2. <span class="done DONE">DONE</span> Résumé du TO (note, avis, prix dest.)</a></li>
+<li><a href="#org99520cc">3.1.3. <span class="todo TODO">TODO</span> Système Commentaires/avis pour les TO</a></li>
+</ul>
+</li>
+<li><a href="#org2f8451c">3.2. Administrateur</a>
+<ul>
+<li><a href="#org929366b">3.2.1. <span class="todo TODO">TODO</span> Creation d'un back office</a></li>
+<li><a href="#org0cac6c2">3.2.2. Bonus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orge781bfa">4. Autre taches</a>
+<ul>
+<li><a href="#orgc4e8903">4.1. Gestion de Projet</a>
+<ul>
+<li><a href="#orge7866fe">4.1.1. <span class="done DONE">DONE</span> Création wireframe &amp; user stories</a></li>
+<li><a href="#orgf9a25d3">4.1.2. Daily meeting 1</a></li>
+</ul>
+</li>
+<li><a href="#org56cc5e1">4.2. Front-end</a>
+<ul>
+<li><a href="#orga53c007">4.2.1. <span class="todo TODO">TODO</span> Création Charte graphique</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org45b0092">5. Consignes générales et technologies</a></li>
+<li><a href="#org00f0809">6. Ressources</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org58f8413" class="outline-2">
+<h2 id="org58f8413"><span class="section-number-2">1</span> kanban</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org2d94c90" class="outline-3">
+<h3 id="org2d94c90"><span class="section-number-3">1.1</span> Sprint 1</h3>
+<div class="outline-text-3" id="text-1-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">backlog</th>
+<th scope="col" class="org-left">Production / En cours</th>
+<th scope="col" class="org-left">test</th>
+<th scope="col" class="org-left">terminé</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Estimer les temps de travail pour chaque tâches :15min: <i>Marc</i></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#orge7866fe">Création wireframe &amp; user stories</a> <span class="underline">Marc et Cedric</span></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Définir initialement l(/d)es tâches <span class="underline">Marc</span></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Mise en place dépot git <span class="underline">Marc</span></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Mise en place d'une architecture &amp; Choix technos</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Import/complétion/export BDD  :45 minutes: <i>Marc</i></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Création templates de base <i>Marc</i> :	30 minutes:</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#orga53c007">Création charte graphique</a>  :1/2j: <i>Cédric</i></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Récup logo TO &amp; Ajout chemin dans BDD <i>Marc</i> :1h:</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Ajout description destination dans BDD <i>:20min: Cedric</i></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Mail client pour Daily meeting :20minutes:</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Daily meeting 1 (with client) :15minutes:</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Création footer.php :2h: <i>Marc</i></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Intégration charte graphique <i>Cédric</i></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">création header.php :2h: <i>Cedric</i></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#orgea47eca">Visualisation des destinations index.php</a> :1jour: <i>Marc</i></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Daily meeting 2 (with client) :30minutes:</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Création page des destinations Back :1 jour: <i>Marc</i></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#orgb73263e">Création page des destinations</a> Front :1 jour: <i>Cedric</i></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Création objets php (du 1er sprint) :1/2j: <i>Marc</i></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org6b18635" class="outline-3">
+<h3 id="org6b18635"><span class="section-number-3">1.2</span> Sprint 2</h3>
+<div class="outline-text-3" id="text-1-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">backlog</th>
+<th scope="col" class="org-left">Production / En cours</th>
+<th scope="col" class="org-left">test</th>
+<th scope="col" class="org-left">terminé</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Daily meeting 4 (with client)         :30min:</td>
+<td class="org-left">Création objets php (du 2ème sprint) :1/2j: <i>Marc</i></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Présentation client du 1er sprint / daily Meeting 3 :15minutes:</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="#org929366b">Creation d'un back office</a>             :1j:</td>
+<td class="org-left"><a href="#org932493c">Résumé du TO (note, avis, prix dest.)</a> front <i>Cedric</i> :1j:</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#org99520cc">Système Commentaires/avis pour les TO</a> <i>Marc</i> :1j:</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#org932493c">Résumé du TO (note, avis, prix dest.)</a> Back <i>Marc</i> :1j:</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org20a89ea" class="outline-2">
+<h2 id="org20a89ea"><span class="section-number-2">2</span> Contexte</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org50e826d" class="outline-3">
+<h3 id="org50e826d"><span class="section-number-3">2.1</span> Création d'un site de comparaison de Tour Opérateur pour un client</h3>
+</div>
+<div id="outline-container-org8938913" class="outline-3">
+<h3 id="org8938913"><span class="section-number-3">2.2</span> POC</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Dans un souci de développement agile, vous devez produire dans un
+premier temps une preuve de concept (POC) : une version simplifiée qui
+montrera les fonctionnalités du site avec un design attrayant mais
+sans identification ou sécurité spécifique.
+</p>
+</div>
+</div>
+<div id="outline-container-org2cbb5c3" class="outline-3">
+<h3 id="org2cbb5c3"><span class="section-number-3">2.3</span> But</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+À la fin de cette semaine de sprint, vous devrez avoir un prototype
+fonctionnel pour le présenter au client afin de récolter ses premières
+impressions dans le but de faire des modifications à sa convenance.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1c9e53a" class="outline-2">
+<h2 id="org1c9e53a"><span class="section-number-2">3</span> Fonctionnalités du site</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Deux grandes parties : front-office et back-office.
+</p>
+</div>
+<div id="outline-container-orgcec502d" class="outline-3">
+<h3 id="orgcec502d"><span class="section-number-3">3.1</span> Utilisateur</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgea47eca" class="outline-4">
+<h4 id="orgea47eca"><span class="section-number-4">3.1.1</span> <span class="done DONE">DONE</span> Visualisation des destinations <span class="underline">page.php</span></h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>Sur la page d'accueil l'utilisateur peut visualiser toutes les</li>
+</ul>
+<p>
+destinations proposées par ComparOpérator.
+</p>
+<ul class="org-ul">
+<li>Limiter le nombre de destinations à 10 pour démarrer.</li>
+<li>Redirection vers TO en fonction de la destination choisie</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgb73263e"></a><span class="done DONE">DONE</span> Une page par destination<br />
+<div class="outline-text-5" id="text-3-1-1-1">
+<p>
+Quand une destination est sélectionnée, l'utilisateur est redirigé
+vers une page qui liste les Tours Opérateur (TO) pour cette
+destination.
+</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org932493c" class="outline-4">
+<h4 id="org932493c"><span class="section-number-4">3.1.2</span> <span class="done DONE">DONE</span> Résumé du TO (note, avis, prix dest.)</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<ul class="org-ul">
+<li>sa note d'avis global (grade)</li>
+<li>le prix des destinations</li>
+<li>messages d'avis d'autres utilisateurs.</li>
+
+<li>Affichage d'un lien vers site web du TO si premium</li>
+</ul>
+<p>
+Si le TO est premium, un lien vers son site officiel est disponible
+(au click d'un bouton ou sur le nom du TO).
+</p>
+</div>
+</div>
+<div id="outline-container-org99520cc" class="outline-4">
+<h4 id="org99520cc"><span class="section-number-4">3.1.3</span> <span class="todo TODO">TODO</span> Système Commentaires/avis pour les TO</h4>
+<div class="outline-text-4" id="text-3-1-3">
+<p>
+Un utilisateur peut écrire une review dans un simple champ de saisie.
+Il doit écrire son nom pour chaque avis laissé (comme pour le
+mini-chat).
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org15c0ac7"></a>Bonus<br />
+<div class="outline-text-5" id="text-3-1-3-1">
+<ul class="org-ul">
+<li>Intégrer un POC d'une bannière promotionnelle d'un TO affichant une
+destination mise en avant avec un prix réduit et un call-to-action
+renvoyant vers l'offre.</li>
+
+<li>un utilisateur peut donner une note à un TO, ce qui augmente ou
+diminue son score moyen.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org2f8451c" class="outline-3">
+<h3 id="org2f8451c"><span class="section-number-3">3.2</span> Administrateur</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org929366b" class="outline-4">
+<h4 id="org929366b"><span class="section-number-4">3.2.1</span> <span class="todo TODO">TODO</span> Creation d'un back office</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<ul class="org-ul">
+<li>La page administrateur est accessible juste en ajoutant /admin dans l'URL</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org5fc34f2"></a><span class="done DONE">DONE</span> Ajout de TO.<br /></li>
+<li><a id="orga4b742d"></a><span class="done DONE">DONE</span> Ajout destinations aux TO<br />
+<div class="outline-text-5" id="text-3-2-1-2">
+<p>
+L'administrateur peut également ajouter des destinations aux TO parmi une liste fixe.
+</p>
+</div>
+</li>
+<li><a id="org0aff72e"></a><span class="done DONE">DONE</span> Un tour opérateur peut être passé en premium sur cette page.<br /></li>
+</ol>
+</div>
+<div id="outline-container-org0cac6c2" class="outline-4">
+<h4 id="org0cac6c2"><span class="section-number-4">3.2.2</span> Bonus</h4>
+<div class="outline-text-4" id="text-3-2-2">
+<ul class="org-ul">
+<li>Ajouter la possibilité de donner une note au TO de 1 à 5 ce qui
+augmente la note moyenne du TO en fonction du nombre de vote. (il
+faudra ajouter une colonne <code>votes</code> à la table tour\<sub>operators</sub> qui
+s'incrémente à chaque vote pour faire une moyenne).</li>
+
+<li>Authentification par mot de passe enregistré en session
+(un mot de passe unique pour tous les administrateurs d'un site).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge781bfa" class="outline-2">
+<h2 id="orge781bfa"><span class="section-number-2">4</span> Autre taches</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgc4e8903" class="outline-3">
+<h3 id="orgc4e8903"><span class="section-number-3">4.1</span> Gestion de Projet</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orge7866fe" class="outline-4">
+<h4 id="orge7866fe"><span class="section-number-4">4.1.1</span> <span class="done DONE">DONE</span> Création wireframe &amp; user stories</h4>
+</div>
+
+<div id="outline-container-orgf9a25d3" class="outline-4">
+<h4 id="orgf9a25d3"><span class="section-number-4">4.1.2</span> Daily meeting 1</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<ul class="org-ul">
+<li>presentation wireframe</li>
+<li>presentation des sprints</li>
+<li>presentation charte graphique</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org56cc5e1" class="outline-3">
+<h3 id="org56cc5e1"><span class="section-number-3">4.2</span> Front-end</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-orga53c007" class="outline-4">
+<h4 id="orga53c007"><span class="section-number-4">4.2.1</span> <span class="todo TODO">TODO</span> Création Charte graphique</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<p>
+(logotype, thème de couleurs, typographie et iconographie).
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org45b0092" class="outline-2">
+<h2 id="org45b0092"><span class="section-number-2">5</span> Consignes générales et technologies</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>Utiliser un framework CSS de votre choix pour optimiser votre
+workflow d'intégration.</li>
+
+<li>Vous devrez porter un soin particulier sur l'ergonomie et le
+parcours utilisateur du projet, prévoyez des effets de navigation et
+de sélection intuitifs.</li>
+
+<li>Le parcours utilisateur devra être réfléchi et optimisé pour une
+utilisation intuitive des interfaces (liens clairs et cliquables,
+zones de navigation définies, zones d'action visibles et
+accessibles, textes lisibles et absence d'impasse et liens morts),</li>
+
+<li>L'interface front-office devra être responsive (ou mobile first),
+devra être compatible avec tous les terminaux du marché
+(desktop/laptop/tablet/phone),</li>
+
+<li>L'interface back-office devra être au moins adaptative
+(desktop/laptop/tablet).</li>
+
+<li>L'interface utilisera des éléments graphiques prédéfinis (nav,
+sidebar, card, bouton, etc.) réutilisables sous forme /design-system
+/à travers l'ensemble des pages de l'interface,</li>
+
+<li>Le but de ce projet est amené à évoluer (méthode agile) il doit
+nécessairement pouvoir être modifiable, vous allez concevoir la
+partie back-end en POO.</li>
+
+<li>Votre projet PHP devra respecter les normes et conventions de
+rigueur (<a href="https://www.php-fig.org/psr/">PHP Standards Recommendations - PHP-FIG</a>).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org00f0809" class="outline-2">
+<h2 id="org00f0809"><span class="section-number-2">6</span> Ressources</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>Utiliser le diagramme de Bdd et UML pour la POO suivant:
+<a href="https://drive.google.com/file/d/1HQOa5p8ah-5zTChEfZf7RA9aM2cv4Ati/view?usp=sharing">https://drive.google.com/file/d/1HQOa5p8ah-5zTChEfZf7RA9aM2cv4Ati/view?usp=sharing</a></li>
+<li>Utiliser la BDD suivante : <a href="https://www.fgtechs.fr/z-pedro/Simplon/compoperator/compoperator.sql">cliquant sur ce lien</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Marc</p>
+<p class="date">Created: 2019-06-08 sam. 14:17</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

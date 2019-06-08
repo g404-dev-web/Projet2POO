@@ -1,0 +1,35 @@
+footer {
+    padding: 45px;
+    background-color: rgba(31,31,31,0.8);
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+
+#footer-map {
+    width: 90vw;
+}
+
+#footer-map iframe{
+    width: 100%;
+}
+
+.link-bigger-map {
+    align-self: flex-start;
+    margin-left: 45px;
+}
+
+
+.link-back-office {
+    align-self: flex-end;
+    margin-right: 45px;
+}
+
+h5 {
+    font-family: "Roboto";
+    color: white;
+}

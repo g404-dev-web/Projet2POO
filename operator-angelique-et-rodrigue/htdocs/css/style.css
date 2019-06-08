@@ -1,0 +1,189 @@
+body {
+    background: linear-gradient(105deg, #6e99e6, #093c94);
+}
+
+.row {
+    background: white;
+}
+
+.navbar {
+    background: linear-gradient(105deg, #6e99e6, #093c94);
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+
+/* css page index */
+
+.card {
+    font-family: helvetica;
+    border: 1px solid black;
+    margin: 20px 47px 20px 47px;
+    padding: auto;
+    border-radius: 10px;
+    background-color: rgb(240, 203, 181);
+    box-shadow: 1px 1px 5px 1px #000000;
+}
+
+h4 {
+    color: rgb(15, 14, 14);
+    font-weight: bold;
+    font-family: helvetica;
+    border: 4px solid rgb(196, 195, 195);
+    border-radius: 10px;
+    background: linear-gradient(105deg, #6e99e6, #093c94);
+    padding: 10px 10px 10px 25px;
+    -webkit-box-shadow: inset black 0.1em 0.1em 0.2em;
+    text-shadow: 2px 2px 55px 0px #000000;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    background: white;
+}
+
+.img_desti {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    background-color: transparent;
+}
+
+
+/* css page agence */
+
+.card-title {
+    margin-top: 5px;
+}
+
+.text-muted {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 2px 2px 0px 2px #000000;
+}
+
+#blocImage p {
+    width: 100%;
+    margin: auto;
+    z-index: 200;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    text-shadow: 1px 1px rgb(5, 5, 5);
+    text-align: center;
+    font-family: "helvetica", Arial, Sans-serif;
+    font-size: 3em;
+    color: rgb(243, 168, 28);
+}
+
+#blocImage {
+    background-image: url(images/fond.jpg);
+    background-size: cover;
+}
+
+.nav-link {
+    text-shadow: 1px 1px rgb(5, 5, 5);
+    font-family: "helvetica", Arial, Sans-serif;
+    font-size: 1.3em;
+}
+
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card1 {
+    height: 240px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 150px;
+    opacity: 0, 4;
+    background: repeating-linear-gradient(rgb(184, 221, 228) 1%, rgb(61, 107, 233) 5%, rgb(151, 151, 151) 25%);
+}
+
+
+/* css page admin */
+
+h5 {
+    text-align: center;
+}
+
+.container {
+    border: 2px solid black;
+    margin: 15px 60px 15px 65px;
+}

@@ -1,0 +1,12 @@
+Monsieur,
+
+Nous vous informons avoir commencé à poser l'architecture technique et
+graphique de votre site web. Dans le cadre d'un développement selon la
+méthode agile, nous souhaiterions vous rencontrer dans vos locaux lors
+d'un premier daily meeting ce mardi matin. Merci de nous indiquer par
+retour quel moment serait le plus opportun pour vous.
+
+Restant à votre disposition, nous vous souhaitons une bonne fin de
+journée.
+
+Cédric et Marc pour l'Agence Web.

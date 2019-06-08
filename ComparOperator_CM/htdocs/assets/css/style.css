@@ -1,0 +1,343 @@
+
+html {
+  scroll-behavior: smooth;
+} 
+.img { 
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+} 
+
+.navbar {
+        width: 100%;
+        font-size: 15px;
+        height:70px; 
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  
+}
+
+.allCardDestination{
+  margin-bottom: 100px;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: #5392a8;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #a9aaaa;
+    font-size: 15px;
+   
+
+}
+
+#main-image {
+    height: 600px;
+    width :100%;
+    
+} 
+
+#imgPrincipale{
+  width: 98%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#textImg {
+  color: white;
+  text-shadow: 2px 2px #5392a8 ;
+  transform: translateY(500px);
+  width :500px;
+  float : right;
+
+  
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    opacity: 0.6;
+    font-size: 15px;
+    text-align: right;
+    bottom: 4em;
+    
+   
+  } 
+
+.selectionDestination{
+text-align: center;
+
+}
+
+  /* Style brandBanner */
+
+
+#steps{
+  margin-top : 50px;
+  border-top: 1px solid #a9aaaa;
+  margin-left: auto;
+  margin-right: auto ;
+  width: 100%;
+}
+
+#brandSteps{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#steps ul {
+  margin: 25px 0;
+
+}
+#steps ul li{
+  width: 270px;
+  float: left;
+  padding-top: 140px;
+  text-align: center;
+  margin-right: 10px;
+  
+}
+#steps h4 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#steps p{
+  margin-bottom: 20px;
+  color: black;
+}
+#step-1 {
+  background: url('../img/icons/steps_icon_1_1.png') no-repeat top center;
+  
+
+}
+#step-2 {
+  background: url('../img/icons/steps_icon_2.png') no-repeat top center;
+}
+#step-3 {
+  background: url('../img/icons/steps_icon_3.png') no-repeat top center;
+}
+
+/* Style Cards */
+
+.titreContainerCard{
+  margin-top: 70px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  color: #5392a8;
+  
+}
+
+.cardDestination{
+  margin : 3px;
+  margin-top: 30px;
+  height: 235px;
+  width: 250px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.card-img-top{
+  width: 100%;
+  height: 100%;
+
+}
+ 
+.card-title{
+  font-size: 35px;
+  margin-top : 40px;
+  margin-bottom: 30px;
+}
+
+.card-img-overlay{
+  opacity:0;
+  color: white;
+  transition: all 320ms ease;
+}
+
+.card-img-overlay:hover{
+  opacity: 1;
+  background-color: rgba(57, 65, 65, 0.788);
+  -webkit-box-shadow: 6px 4px 3px 0px rgba(0,0,0,0.47); 
+  box-shadow: 6px 4px 3px 0px rgba(0,0,0,0.47); 
+  transition: all 320ms ease;
+
+}
+/* Style page Destination */
+
+#imageDestination{
+
+  height: 580px;
+}
+
+
+.titleDestination > h2{
+  font-size: 70px;
+  color: white;
+  text-shadow: 2px 2px #5392a8 ;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding-top : 400px;
+  text-transform: uppercase;
+
+}
+
+.destinationParagraphe{
+  margin-top: 25px;
+  margin-right: 30px;
+  margin-left : 30px;
+  text-align: justify;
+
+}
+
+.destinationParagraphe > h3{
+  color: #5392a8
+}
+
+
+/* Style partie Admin */
+
+#htmlAdmin{
+  overflow: hidden;
+}
+#bodyAdmin{
+  max-height: 100vh;
+  
+  }
+  
+  
+  .formAdmin{
+    transform: translateY(90px);
+    padding: 10px;
+    text-align: left;
+    width : 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color : white;
+    background-color: #b4b5b6b6;
+  }
+  .titleForm{
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  
+  
+  .contentPage{
+    background: url(../img/imageprincipale.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(60%);
+    -webkit-filter: grayscale(60%);
+    -moz-filter: grayscale(60%);
+    height: 100vh;
+    z-index : 1;
+  }
+.successMessage{
+  background: #7ed67973;
+  color : green;
+  font-size: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 700px;
+  transform: translateY(150px) translateX(80px);
+
+}
+
+.sidebar {
+  position: absolute;
+  z-index: 5;
+  width : 300px;
+  background-color: #f8f9fa;
+  flex: 0 0 200px;
+  height: 100vh;
+  display: inherit;
+  flex-direction: column;
+  text-align: left;
+}
+
+.titleSidebar{
+  margin: 20px;
+  padding:10px;
+  color:black;
+  text-align: center;
+}
+
+.linkSidebar{
+  margin: 30px;
+  color : black;
+}
+
+#cardTO{
+  text-align: center;
+  border: 1px solid #a9aaaa;
+  -webkit-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.58); 
+box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.58);
+margin : 15px;
+}
+
+.imgTO{
+  padding-right : 30px;
+  padding-left : 30px;
+  padding-top: 10px;
+  max-width: 100%;
+}
+
+.imgModalTO{
+  width:150px;
+}
+
+.modalGradeTO{
+  padding-top : 30px;
+  width : 150px;
+  padding-left: 20px;
+}
+
+.stars{
+  padding-top: 60px;
+transform: translateX(-140px)
+}
+
+.bodyReviews{
+  max-height: 300px;
+  overflow-y: auto;
+  text-align: center;
+
+
+}
+
+.titleReviewsContent {
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.inputFormReview{
+  padding-left :10px;
+}
+
+
+
+

@@ -1,0 +1,122 @@
+
+ :root {
+     --height-img-description: 100px;
+     --height-destination: 300px;
+}
+
+.destination {
+  padding: 0;
+  margin: 10px;
+  height: var(--height-destination);
+  border: solid;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px 1px grey;
+}
+
+.destination:hover {
+    transform: scale(1.05);
+    background-color: white;
+}
+.container-description-and-btn {
+    height: calc(var(--height-destination) - var(--height-img-description));
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+.container-description-and-btn a {
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.img_description {
+  height: var(--height-img-description);
+  width: 100%;
+}
+
+.text_description {
+    height: 100%;
+}
+
+.text_description p {
+  font-family: "Roboto";
+  // font-size: 15px;
+  padding: 10px;
+  // text-overflow: ellipsis;
+  // height: 90%;
+
+  // http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative; 
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 9.2em; 
+  /* fix problem when last visible word doesn't adjoin right side  */
+  // text-align: justify;  
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+/* create the ... */
+.text_description p:before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 10px;
+  bottom: 2px;
+  padding: 1px 10px;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.9);
+}
+
+// /* hide ... if we have text, which is less than or equal to max lines */
+// .text_description p:after {
+//   /* points in the end */
+//   content: '';
+//   /* absolute position */
+//   position: absolute;
+//   /* set position to right bottom corner of text */
+//   right: 10px;
+//   /* set width and height */
+//   width: 1em;
+//   height: 1em;
+//   margin-top: 0.2em;
+//   /* bg color = bg color under block */
+//   background: white;
+// }
+
+.container-destinations h2  {
+  position: absolute;
+  top: 10px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  padding: 10px;
+  font-size: 40px;
+  color: white;
+  font-family: "Hand_Of_Sean";
+
+  text-shadow:
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+.container-destinations {
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+    
