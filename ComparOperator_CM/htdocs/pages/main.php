@@ -8,7 +8,7 @@ function chargerClass($class)
     require "../partials/classes/" . $class . ".php";
 }
 spl_autoload_register('chargerClass');
-$bdd = new Manager('192.168.1.15');
+$bdd = new Manager('127.0.0.1');
 ?>
 
 

@@ -1,0 +1,9 @@
+127.0.0.1       ComparOperatorA-E.loc
+127.0.0.1       ComparOperator_CM.loc
+127.0.0.1       Luxury-Compare-Operator.loc
+127.0.0.1       OOP-DreamTours.loc
+127.0.0.1       comparOperator_CP.loc
+127.0.0.1       comparOperator_KP.loc
+127.0.0.1       comparo.loc
+127.0.0.1       operator-angelique-et-rodrigue.loc
+127.0.0.1       ComparOperatorCedMarc.loc
